@@ -3,7 +3,7 @@ package genericheap;
 // Class Angle is used to store an angle in degrees and minutes, as in "29
 // degrees and 35 minutes."
 
-public class Angle implements Comparable<Angle>{
+public class Angle implements Comparable<Angle> {
     private int degrees;
     private int minutes;
 
@@ -44,14 +44,14 @@ public class Angle implements Comparable<Angle>{
 
     @Override
     public int compareTo(Angle other) {
-        if(this.degrees != other.degrees)
+        if (this.degrees != other.degrees)
             return this.degrees - other.degrees;
         return this.minutes - other.minutes;
     }
 
     @Override
     public boolean equals(Object obj) {
-        if(obj instanceof Angle) {
+        if (obj instanceof Angle) {
             Angle other = (Angle) obj;
             return this.degrees == other.degrees && this.minutes == other.minutes;
         }

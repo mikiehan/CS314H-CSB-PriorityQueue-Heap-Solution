@@ -7,8 +7,7 @@ package genericheap;
 public class AngleClient {
 
     // Test program
-    public static void main( String [ ] args )
-    {
+    public static void main(String[] args) {
         Angle[] angleArray = {new Angle(20, 26), new Angle(10, 48), new Angle(30, 19),
                 new Angle(30, 12),
                 new Angle(30, 55)};
@@ -17,7 +16,7 @@ public class AngleClient {
         int numItems = 10000;
         OneBasedBinaryHeap<Angle> h = new OneBasedBinaryHeap<>(angleArray);
 
-        h.insert( new Angle(15, 100) );
+        h.insert(new Angle(15, 100));
         Angle a = h.deleteMin();
     }
 }
